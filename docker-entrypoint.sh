@@ -8,6 +8,7 @@ elif [ "$1" != "" ]; then
 fi
 
 if [ -d /hook ]; then
+   cd /hook
    for i in `ls *.sh`; do
        cd /hook
        echo "---- hook: /hook/$i ----"
